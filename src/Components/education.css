@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+.education-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #4F46E5;
+  }
+ 
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #4F46E5;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+ 
+  .timeline-item.left {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  
+  .timeline-item.right {
+    text-align: right;
+  }
+  
+  .timeline-content {
+    background: #f3f4f6;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    min-height: 100px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .timeline-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #4F46E5;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    z-index: 3;
+  }
+  
+  .timeline-dot:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .timeline-date {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #6B7280;
+    background: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column !important;
+      text-align: center;
+    }
+  
+    .timeline-content {
+      width: 80%;
+    }
+  
+    .timeline-dot {
+      left: 50%;
+    }
+  
+    .timeline::before {
+      left: 50%;
+    }
+  }
+  

@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.footer {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.footer p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #00aaff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #0088cc;
+    transform: scale(1.05);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+#moreLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+    margin-top: 2rem;
+    padding: 1rem;
+    
+    border-radius: 10px; 
+}
+
+#moreLinks a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1rem;
+    font-weight: 500; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    transition: all 0.3s ease;
+}
+
+#moreLinks a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #007bff; 
+    transform: translateY(-2px); 
+}
+
+#moreLinks a:active {
+    transform: translateY(0); 
+}
+
+@media (max-width: 768px) {
+    #moreLinks {
+        gap: 1rem; 
+        padding: 0.5rem; 
+    }
+
+    #moreLinks a {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+}

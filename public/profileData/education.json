@@ -1,0 +1,23 @@
+{
+    "education":[
+        {
+            "title": "Aug 2019 - Jun 2023",
+            "cardTitle": "B.Tech, Computer Science",
+            "cardSubtitle":"Prasad V Potluri Siddhartha Institute Of Technology, Vijayawada",
+            "cardDetailedText": "CGPA - 8.2"
+            
+        },
+        {
+            "title": "Jun 2017 - Apr 2019",
+            "cardTitle": "Intermediate",
+            "cardSubtitle":"Sri Chaitanya Junior College, Guntur",
+            "cardDetailedText": "Marks - 910"
+        },
+        {
+            "title": "Jun 2016 - Apr 2017",
+            "cardTitle": "SSC",
+            "cardSubtitle":"Zilla Parishad High School, Adavuladeevi",
+            "cardDetailedText": "CGPA - 8.7"
+        }
+    ]
+}

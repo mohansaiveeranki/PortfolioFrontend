@@ -1,0 +1,21 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/mohansaiveeranki5380/",
+            "image": "/photos/about/linkedin.webp"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/mohansaiveeranki/portfolio",
+            "image": "/photos/about/github.jpeg"
+
+        },
+        {
+            "network" : "email",
+            "href": "mailto:mohansaiveeranki@gmail.com",
+            "image": "/photos/about/gmail.jpg"
+            
+        }
+    ]
+}

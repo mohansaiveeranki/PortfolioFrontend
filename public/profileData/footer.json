@@ -1,0 +1,24 @@
+{
+    "introText": "Interested in working with me?",
+    "buttonText": "Let's talk",
+    "contactLink": "/contact",
+    "moreLinksTitle": "More Links",
+    "description": "I’m a Java Full-Stack Developer with a passion for building efficient and scalable applications. I enjoy working with Java, Spring Boot, React.js, and SQL, creating solutions that not only perform well but also enhance user experience.",
+    "socialTitle": "Social",
+    "socialLinks": [
+      {
+        "icon": "photos/about/linkedin.webp",
+        "url": "https://www.linkedin.com/in/mohansaiveeranki5380/"
+      },
+      {
+        "icon": "photos/about/github.jpeg",
+        "url": "https://github.com/mohansaiveeranki/portfolio"
+      },
+      {
+        "icon": "photos/about/gmail.jpg",
+        "url": "mailto:mohansaiveeranki@gmail.com"
+      }
+    ],
+    "copyright": "2025",
+    "author": "Mohansai Veeranki"
+  }

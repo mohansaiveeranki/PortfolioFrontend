@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+  }
+.about-container {
+    max-width: var(--responsive-xl);
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+        font-size: var(--font-size-xl);
+        padding-bottom: 2rem;
+    }
+
+    .child-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: var(--spacing-xxl);
+        align-items: center;
+
+        p {
+            font-size: var(--font-size-base);
+            /* order: 1; */
+            /* padding-right:var(--spacing-xxxl);
+                padding-left:var(--spacing-xxxl) ; */
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: var(--spacing-md);
+            order: 2;
+
+        }
+
+        .image-container {
+            order: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+            max-width: 320px;
+
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+                object-fit: contain;
+                padding: 0;
+            }
+
+        }
+
+    }
+
+    .subchild-container {
+        padding-left: var(--spacing-xxl);
+    }
+
+}
+
+@media (width >=40rem) {
+    .about-container {
+
+        .child-container {
+            grid-template-columns: repeat(2, 1fr);
+
+            .about-container {
+                order: 1;
+            }
+
+            .image-container {
+                order: 2;
+              
+            }
+        }
+
+        .child-container img {
+            max-width: 90%;
+        }
+    }
+
+}
+
+@media (width >=48rem) {
+    .child-container img {
+        max-width: 70%;
+    }
+
+}
+
+@media (width >=64rem) {
+    .child-container img {
+        max-width: 60%;
+    }
+
+}
+
+@media (width >=80rem) {
+    .child-container img {
+        max-width: 50%;
+    }
+}
+
+@media (width >=96rem) {
+    .child-container img {
+        max-width: 70%;
+    }
+}
