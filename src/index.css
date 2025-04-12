@@ -1,14 +1,21 @@
 :root {
     /* Colors */
-    --primary-color: #007bff;
-    /* Blue */
-    --secondary-color: #6c757d;
-    /* Gray */
-    --background-color: #f8f9fa;
-    /* Light Gray */
-    --text-color: #212529;
-    /* Dark Gray */
-    --accent-color: #ff5722;
+    --background-color: #f9f9fb;
+    /* Soft light neutral */
+    --text-color: #1c1c1e;
+    /* Rich black-gray for contrast */
+
+    --primary-color: #0056b3;
+    /* Deep blue – elegant & strong contrast */
+    --secondary-color: #495057;
+    /* Dark slate gray for subdued UI parts */
+    --accent-color: #d6336c;
+    /* Rose red – vivid and stylish */
+    --icon-color: #ff9800;
+    /* Rich orange – warm and readable */
+
+    --white: #ffffff;
+    --gradient: linear-gradient(135deg, #e0eafc, #f9f9fb);
     /* Orange */
 
     /* Font Sizes (Using clamp for responsiveness) */
@@ -30,17 +37,6 @@
     --line-height-base: 1.6;
     --line-height-lg: 1.8;
 
-    /* Breakpoints */
-    --breakpoint-sm: 40rem;
-    /* 640px */
-    --breakpoint-md: 48rem;
-    /* 768px */
-    --breakpoint-lg: 64rem;
-    /* 1024px */
-    --breakpoint-xl: 80rem;
-    /* 1280px */
-    --breakpoint-xxl: 96rem;
-    /* 1536px */
 
     /* Max Width for Containers */
     --max-width: 96rem;
@@ -78,8 +74,33 @@
     /* For fully rounded elements */
 
     /* Responsive width */
-    --responsive-xl: 96rem;
+    --responsive-xl: 120rem;
 
+
+    --font-family: 'Poppins', sans-serif;
+
+}
+
+[data-theme="dark"] {
+    --background-color: #000000;
+    /* Pure black background */
+
+    --text-color: #f2f2f2;
+    /* Very light gray for smooth reading */
+    --white: #ffffff;
+    /* Use sparingly (e.g., highlights) */
+    --icon-color: #FFCC33;
+    /* Gold-like: good contrast & style */
+
+    --primary-color: #1e90ff;
+    /* Brighter than #007bff, better on dark */
+    --secondary-color: #aaaaaa;
+    /* Softer gray for less emphasis */
+    --accent-color: #ff5722;
+    /* Vibrant orange: stands out well */
+
+    --gradient: linear-gradient(145deg, #1a1a1a, #000);
+    /* Slight depth effect */
 }
 
 
@@ -92,3 +113,39 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.responsiveCon {
+    padding-left: var(--spacing-xs) !important;
+    padding-right: var(--spacing-xs) !important;
+    width: 100%;
+    max-width: var(--responsive-xl);
+    margin: 0 auto;
+}
+
+@media (width >=25rem) {
+    .responsiveCon {
+        padding-left: var(--spacing-sm) !important;
+        padding-right: var(--spacing-sm) !important;
+    }
+
+}
+
+@media (width >=40rem) {
+    .responsiveCon {
+        padding-left: var(--spacing-sm) !important;
+        padding-right: var(--spacing-sm) !important;
+    }
+}
+
+@media (width >=48rem) {
+    .responsiveCon {
+        padding-left: var(--spacing-xl) !important;
+        padding-right: var(--spacing-xl) !important;
+    }
+}
+
+@media (width >=64rem) {}
+
+@media (width >=80rem) {}
+
+@media (width >=96rem) {}

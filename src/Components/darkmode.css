@@ -1,0 +1,47 @@
+/* Default Theme Variables */
+/* body[data-theme="light"] {
+   
+    --bg-color: #121212;
+    --text-color: #ffffff;
+  }
+  
+  /* Dark Theme Variables */
+  /* body[data-theme="dark"] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+   
+    
+  } */
+  
+  /* Apply Global Styles Using Variables */
+  /* body {
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+  } */
+  
+  /* Theme Toggle Button Styling */
+  .theme-toggle {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    background: none;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 20px; */
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    z-index: 10;
+  }
+  

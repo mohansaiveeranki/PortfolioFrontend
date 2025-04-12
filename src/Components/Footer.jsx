@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>{footer.author} &copy; {footer.copyright}</p>
+                    <p className='design'>{footer.author} &copy; {footer.copyright}</p>
                 </div>
             </div>
             <div id="moreLinks">

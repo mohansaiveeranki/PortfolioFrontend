@@ -23,6 +23,7 @@ const Skills = () => {
         <h1>Skills</h1>
         {skills && (
           <div className="grid-container">
+          
             <div className="skills-section">
               <h3>{skills[0].title}</h3>
               <div className="skills-items">

@@ -23,16 +23,19 @@ let Home = () => {
         <div className="home-Container" id="home">
             {profileData ? (
                 <div className="child-Container">
-                    <h1>{profileData.name}</h1>
-                    <h2>I'm&nbsp;
-                        <Typewriter
+                    <h1 id="name">{profileData.name}</h1>
+                    <h2 >I'm&nbsp;
+                    <span className="role"> 
+                        <Typewriter 
                             options={{
                                 strings: profileData.roles,
                                 autoStart: true,
                                 loop: true,
                                 delay: 100,
+                                
                             }}
                         />
+                    </span>
                     </h2>
                 </div>
             ) : (

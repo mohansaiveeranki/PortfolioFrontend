@@ -2,12 +2,14 @@ html {
     scroll-behavior: smooth;
   }
 .about-container {
+    font-family: var(--font-family);
     max-width: var(--responsive-xl);
     margin: 0 auto;
     h1 {
         text-align: center;
         font-size: var(--font-size-xl);
-        padding-bottom: 2rem;
+        padding-bottom: var(--spacing-md);
+        font-weight: 700;
     }
 
     .child-container {
@@ -17,11 +19,30 @@ html {
         align-items: center;
 
         p {
-            font-size: var(--font-size-base);
+            font-size: var(--font-size-md);
             /* order: 1; */
             /* padding-right:var(--spacing-xxxl);
                 padding-left:var(--spacing-xxxl) ; */
         }
+        .animated-button {
+            background: black;
+            color: #0ff;
+            padding: var(--spacing-sm) var( --spacing-lg);
+            border: 2px solid #0ff;
+            border-radius: var(--border-radius-md);
+            font-size: var( --font-size-lg);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgb(0, 123, 255), 0 0 40px rgb(0, 94, 255) inset;
+          }
+          
+          .animated-button:hover {
+            box-shadow: 0 0 20px rgb(18, 128, 196), 0 0 50px rgb(0, 94, 255) inset;
+            text-shadow: 0 0 5px rgb(6, 94, 175);
+          }
+          
 
         .about-container {
             display: flex;
@@ -30,6 +51,10 @@ html {
             gap: var(--spacing-md);
             order: 2;
 
+        }
+        #about{
+            font-family: var(--font-family);
+            font-size: var(--font-size-lg);
         }
 
         .image-container {
@@ -45,7 +70,7 @@ html {
                 height: auto;
                 aspect-ratio: 1;
                 object-fit: contain;
-                padding: 0;
+               padding: 0;
             }
 
         }

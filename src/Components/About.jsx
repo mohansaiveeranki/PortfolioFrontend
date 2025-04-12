@@ -23,13 +23,13 @@ let About=()=>{
          <>
            <div className="child-container">
              <div className="about-container">
-               <p>{about.about}</p>
+               <p id="about">{about.about}</p>
                <a
                  href={about.resumeLink}
                  target="_blank"
                  rel="noopener noreferrer"
                >
-                 <button>Resume</button>
+                 <button className="animated-button">Resume</button>
                </a>
              </div>
              <div className="image-container">
