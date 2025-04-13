@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Education.css";
+import "./education.css";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaGraduationCap } from "react-icons/fa";
