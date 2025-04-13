@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import "./home.css";
+import TypeWriter from "./TypeWriter";
 
 let Home = () => {
     const [profileData, setProfileData] = useState(null);
@@ -25,8 +26,8 @@ let Home = () => {
                 <div className="child-Container">
                     <h1 id="name">{profileData.name}</h1>
                     <h2 >I'm&nbsp;
-                    <span className="role"> 
-                        <Typewriter 
+                    {/* <span className="role">  */}
+                        {/* <Typewriter 
                             options={{
                                 strings: profileData.roles,
                                 autoStart: true,
@@ -34,8 +35,9 @@ let Home = () => {
                                 delay: 100,
                                 
                             }}
-                        />
-                    </span>
+                        /> */}
+                        <TypeWriter texts={ profileData.roles}/>
+                    {/* </span> */}
                     </h2>
                 </div>
             ) : (
