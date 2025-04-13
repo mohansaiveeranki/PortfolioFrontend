@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Skills.css"; 
+import "./skills.css"; 
 
 const Skills = () => {
     const [skills, setSkills] = useState(null);
