@@ -1,30 +1,19 @@
-import { useEffect, useState } from "react";
-
 import "./App.css";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Social from "./Components/Social";
-import Skills from "./Components/Skills";
-import Education from "./Components/Education";
-import Footer from "./Components/Footer";
-import Navbar1 from "./Components/Navbar1";
-import ResponsiveCon from "./Components/ResponsiveCon";
-import DarkMode from "./Components/DarkMode";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./layout";
+import ProjectsPage from "./Pages/ProjectsPage";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <>
       <div className="app_bg_container">
-      <Navbar1 />
-      <ResponsiveCon>
-        <Home />
-        <About />
-        <Social />
-       <DarkMode />
-        <Skills />
-        <Education />
-      </ResponsiveCon>
-      <Footer />
+       <Routes>
+        <Route path="/" element={<Layout/>}>
+         <Route path="projects" element={<ProjectsPage/>}></Route>
+         <Route index element={<HomePage/>}></Route>
+        </Route>
+       </Routes>
       </div>
     </>
   );

@@ -11,7 +11,10 @@
     align-items: center;
     gap: var(--spacing-sm);
 }
-
+.projects1{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
 @media (width >=40rem) {
    
 }

@@ -4,8 +4,17 @@ import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css";
 import "../index.css"
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+    const navigate=useNavigate();
+   function goToProjects(key){
+      if ((!key)){
+          console.log("error");
+          return;
+      }
+       navigate(key);
+   }
+   
   return (
   
     <NavCom bg="dark" variant="dark" expand="lg" sticky="top">
@@ -26,8 +35,8 @@ const Navbar = () => {
         </div>
         <NavCom.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto"> 
-            <Nav.Link href="#home" className="mx-3"><h5>Home</h5></Nav.Link> 
-            <Nav.Link href="#projects" className="mx-3"><h5>Projects</h5></Nav.Link>
+            <button href="#home" className="mx-3 projects1" onClick={goToProjects.bind(this,"/")}>Home</button> 
+            <button href="#projects" className="mx-3 projects1" onClick={goToProjects.bind(this,"/projects")}>Projects</button>
           </Nav>          
         </NavCom.Collapse>
     </NavCom>   

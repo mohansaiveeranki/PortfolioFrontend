@@ -23,7 +23,7 @@ const Footer = () => {
     if (!footer) return <p>Loading footer...</p>;
 
     return (
-        <footer className="footer" id='footer'>
+        <footer className="footer" id='projects'>
             <div className="footer-content">
                 <h2>{footer.introText}</h2>
                 <p>{footer.description}</p>
