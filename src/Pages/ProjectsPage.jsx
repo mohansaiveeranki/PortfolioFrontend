@@ -1,6 +1,6 @@
 import React from "react";
 import "./projectsPage.css";
-import projectsData from "./projectsData";
+import projectsData from "./ProjectsData.js";
 
 const ProjectsPage = () => {
   return (
